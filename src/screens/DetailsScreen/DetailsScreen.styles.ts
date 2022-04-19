@@ -33,6 +33,8 @@ export const Header = styled.View`
 
   position: relative;
   height: 40%;
+
+  z-index: 1;
 `;
 
 export const PokemonName = styled.Text`
@@ -84,14 +86,13 @@ export const PokemonImage = styled.Image`
 
   position: relative;
   bottom: 10px;
-
-  z-index: 1000;
 `;
 
 export const Content = styled.View`
   ${({ theme }) => css`
     flex: 1;
     height: 60%;
+    z-index: 0;
 
     background: ${theme.colors.background};
     border-top-left-radius: 30px;

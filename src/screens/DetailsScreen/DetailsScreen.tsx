@@ -1,6 +1,5 @@
 import React from "react";
 import { View } from "react-native";
-import { StatusBar } from "expo-status-bar";
 
 import pokeballBackgroundImage from "../../global/assets/Pokeball-bg.png";
 import dotsCardImage from "../../global/assets/Pattern.png";
@@ -10,8 +9,6 @@ import * as S from "./DetailsScreen.styles";
 export function DetailsScreen() {
   return (
     <S.Container>
-      <StatusBar style="auto" translucent />
-
       <S.Header>
         <S.ContainerBackgroundImage source={pokeballBackgroundImage} />
 
