@@ -1,16 +1,13 @@
 import React from "react";
 import AnimatedLottieView from "lottie-react-native";
-import { StatusBar } from "expo-status-bar";
 
 import pokebolaAnimation from "./pokebola.json";
 
-import * as S from "./WelcomeScreen.styles";
+import * as S from "./BemVindoScreen.styles";
 
-export function WelcomeScreen() {
+export function BemVindoScreen() {
   return (
     <S.Container>
-      <StatusBar style="light" translucent />
-
       <S.Content>
         <S.WrapperAnimation>
           <AnimatedLottieView autoPlay source={pokebolaAnimation} loop />

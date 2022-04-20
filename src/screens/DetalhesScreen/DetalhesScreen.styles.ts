@@ -1,8 +1,9 @@
 import styled, { css } from "styled-components/native";
 
-export const Container = styled.SafeAreaView`
+export const Container = styled.View`
   ${({ theme }) => css`
-    background: ${theme.colors.backgroundWater};
+    background: ${theme.colors.backgroundType.normal};
+
     flex: 1;
     position: relative;
   `}
@@ -39,7 +40,7 @@ export const Header = styled.View`
 
 export const PokemonName = styled.Text`
   ${({ theme }) => css`
-    color: ${theme.colors.text_white};
+    color: ${theme.colors.text.white};
     font-size: 32px;
     line-height: 38px;
     font-weight: 700;
@@ -48,7 +49,7 @@ export const PokemonName = styled.Text`
 
 export const PokemonNumber = styled.Text`
   ${({ theme }) => css`
-    color: ${theme.colors.text_white};
+    color: ${theme.colors.text.white};
     font-size: 16px;
     line-height: 19px;
     font-weight: 700;
@@ -61,18 +62,17 @@ export const TypeList = styled.View`
 
 export const Badge = styled.View`
   ${({ theme }) => css`
-    margin-right: 5px;
-
-    background: ${theme.colors.text_black};
+    background: ${theme.colors.type.normal};
     border-radius: 3px;
     padding: 5.5px 5px;
     margin-top: 5px;
+    margin-right: 5px;
   `}
 `;
 
 export const BadgeText = styled.Text`
   ${({ theme }) => css`
-    color: ${theme.colors.text_white};
+    color: ${theme.colors.text.white};
     font-size: 12px;
     line-height: 14px;
     font-weight: 400;
@@ -82,10 +82,10 @@ export const BadgeText = styled.Text`
 export const PokemonImage = styled.Image`
   width: 250px;
   height: 250px;
-  margin: 0 auto;
 
-  position: relative;
-  bottom: 10px;
+  position: absolute;
+  align-self: center;
+  bottom: -50px;
 `;
 
 export const Content = styled.View`
@@ -99,8 +99,6 @@ export const Content = styled.View`
     border-top-right-radius: 30px;
 
     padding: 40px 20px 20px;
-
-    position: relative;
   `}
 `;
 
@@ -108,7 +106,7 @@ export const ScrollView = styled.ScrollView``;
 
 export const Paragraph = styled.Text`
   ${({ theme }) => css`
-    color: ${theme.colors.text_gray};
+    color: ${theme.colors.text.gray};
     font-size: 16px;
     margin-top: 10px;
     font-weight: 400;

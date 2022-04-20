@@ -4,9 +4,9 @@ import pokeballBackgroundImage from "../../global/assets/Pokeball-bg-half.png";
 import pokeballCardImage from "../../global/assets/Pokeball.png";
 import dotsCardImage from "../../global/assets/Pattern.png";
 
-import * as S from "./HomeScreen.styles";
+import * as S from "./ListaScreen.styles";
 
-export function HomeScreen() {
+export function ListaScreen() {
   return (
     <S.Container>
       <S.ContainerBackgroundImage source={pokeballBackgroundImage} />
