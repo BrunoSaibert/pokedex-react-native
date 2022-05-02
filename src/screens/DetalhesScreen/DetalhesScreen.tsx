@@ -45,11 +45,70 @@ export function DetalhesScreen() {
 
       <S.Content>
         <S.ScrollView>
-          <S.Paragraph>
-            Bulbasaur can be seen napping in bright sunlight. There is a seed on
-            its back. By soaking up the sun's rays, the seed grows progressively
-            larger.
-          </S.Paragraph>
+          <S.Paragraph>Status</S.Paragraph>
+
+          <S.Status>
+            <S.Type>HP</S.Type>
+            <S.Value>45</S.Value>
+
+            <S.PercentBar>
+              <S.Percent />
+            </S.PercentBar>
+          </S.Status>
+
+          <S.Status>
+            <S.Type>Attack</S.Type>
+            <S.Value>49</S.Value>
+
+            <S.PercentBar>
+              <S.Percent />
+            </S.PercentBar>
+          </S.Status>
+
+          <S.Status>
+            <S.Type>Defense</S.Type>
+            <S.Value>49</S.Value>
+
+            <S.PercentBar>
+              <S.Percent />
+            </S.PercentBar>
+          </S.Status>
+
+          <S.Status>
+            <S.Type>Sp. Atk</S.Type>
+            <S.Value>65</S.Value>
+
+            <S.PercentBar>
+              <S.Percent />
+            </S.PercentBar>
+          </S.Status>
+
+          <S.Status>
+            <S.Type>Sp Def</S.Type>
+            <S.Value>65</S.Value>
+
+            <S.PercentBar>
+              <S.Percent />
+            </S.PercentBar>
+          </S.Status>
+
+          <S.Status>
+            <S.Type>Speed</S.Type>
+            <S.Value>45</S.Value>
+
+            <S.PercentBar>
+              <S.Percent />
+            </S.PercentBar>
+          </S.Status>
+
+          <S.Status>
+            <S.Type>Total</S.Type>
+            <S.Value>318</S.Value>
+
+            <S.PercentBar>
+              <S.Percent />
+            </S.PercentBar>
+          </S.Status>
         </S.ScrollView>
       </S.Content>
     </S.Container>
