@@ -1,8 +1,8 @@
 import styled, { css } from "styled-components/native";
 
 export const Container = styled.View`
-  ${({ theme }) => css`
-    background: ${theme.colors.background};
+  ${(props) => css`
+    background: ${props.theme.colors.background};
     flex: 1;
     position: relative;
   `}
@@ -25,8 +25,8 @@ export const Content = styled.View`
 `;
 
 export const Title = styled.Text`
-  ${({ theme }) => css`
-    color: ${theme.colors.text.black};
+  ${(props) => css`
+    color: ${props.theme.colors.text.black};
     font-size: 32px;
     font-weight: bold;
     margin-top: 80px;
@@ -34,21 +34,21 @@ export const Title = styled.Text`
 `;
 
 export const Paragraph = styled.Text`
-  ${({ theme }) => css`
-    color: ${theme.colors.text.gray};
+  ${(props) => css`
+    color: ${props.theme.colors.text.gray};
     font-size: 16px;
     margin: 10px 0;
     font-weight: 400;
   `}
 `;
 export const Card = styled.TouchableOpacity`
-  ${({ theme }) => css`
+  ${(props) => css`
     flex-direction: row;
     justify-content: space-between;
 
     position: relative;
 
-    background: ${theme.colors.backgroundType.normal};
+    background: ${props.theme.colors.backgroundType.normal};
     border-radius: 10px;
     padding: 20px;
     margin-top: 30px;
@@ -69,8 +69,8 @@ export const CardDotsBackgroundImage = styled.ImageBackground`
 `;
 
 export const CardPokemonNumber = styled.Text`
-  ${({ theme }) => css`
-    color: ${theme.colors.text.black};
+  ${(props) => css`
+    color: ${props.theme.colors.text.black};
     font-size: 12px;
     line-height: 14px;
     font-weight: 700;
@@ -79,8 +79,8 @@ export const CardPokemonNumber = styled.Text`
 `;
 
 export const CardPokemonName = styled.Text`
-  ${({ theme }) => css`
-    color: ${theme.colors.text.white};
+  ${(props) => css`
+    color: ${props.theme.colors.text.white};
     font-size: 26px;
     line-height: 31px;
     font-weight: 700;
@@ -92,8 +92,8 @@ export const CardPokemonTypeList = styled.View`
 `;
 
 export const CardPokemonTypeBadge = styled.View`
-  ${({ theme }) => css`
-    background: ${theme.colors.type.normal};
+  ${(props) => css`
+    background: ${props.theme.colors.type.normal};
     border-radius: 3px;
     padding: 5.5px 5px;
     margin-top: 5px;
@@ -102,8 +102,8 @@ export const CardPokemonTypeBadge = styled.View`
 `;
 
 export const CardPokemonType = styled.Text`
-  ${({ theme }) => css`
-    color: ${theme.colors.text.white};
+  ${(props) => css`
+    color: ${props.theme.colors.text.white};
     font-size: 12px;
     line-height: 14px;
     font-weight: 400;
