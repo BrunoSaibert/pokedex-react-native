@@ -8,7 +8,10 @@ import { BemVindoScreen, ListaScreen, DetalhesScreen } from "./src/screens";
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
-      <StatusBar style="auto" backgroundColor={theme.colors.backgroundRed} />
+      <StatusBar
+        style="auto"
+        backgroundColor={theme.colors.background.primary}
+      />
 
       <BemVindoScreen />
     </ThemeProvider>

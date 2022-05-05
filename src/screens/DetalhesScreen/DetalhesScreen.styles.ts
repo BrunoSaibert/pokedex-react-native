@@ -30,12 +30,26 @@ export const DotsBackgroundImage = styled.ImageBackground`
 
 export const Header = styled.View`
   margin-top: 30px;
-  padding: 50px 20px;
+  padding: 30px 20px;
 
   position: relative;
-  height: 40%;
+  height: 45%;
 
   z-index: 1;
+`;
+
+export const GoBackButton = styled.TouchableOpacity`
+  width: 32px;
+  height: 32px;
+
+  justify-content: center;
+
+  margin-bottom: 20px;
+`;
+
+export const GoBackImage = styled.Image`
+  width: 25px;
+  height: 25px;
 `;
 
 export const PokemonName = styled.Text`
@@ -91,10 +105,10 @@ export const PokemonImage = styled.Image`
 export const Content = styled.View`
   ${(props) => css`
     flex: 1;
-    height: 60%;
+    height: 55%;
     z-index: 0;
 
-    background: ${props.theme.colors.background};
+    background: ${props.theme.colors.background.white};
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 

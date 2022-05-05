@@ -3,6 +3,7 @@ import { View } from "react-native";
 
 import pokeballBackgroundImage from "../../global/assets/Pokeball-bg.png";
 import dotsCardImage from "../../global/assets/Pattern.png";
+import backImage from "../../global/assets/Back.png";
 
 import * as S from "./DetalhesScreen.styles";
 
@@ -13,6 +14,10 @@ export function DetalhesScreen() {
         <S.ContainerBackgroundImage source={pokeballBackgroundImage} />
 
         <S.DotsBackgroundImage source={dotsCardImage} />
+
+        <S.GoBackButton>
+          <S.GoBackImage source={backImage} />
+        </S.GoBackButton>
 
         <View
           style={{

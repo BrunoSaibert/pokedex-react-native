@@ -4,7 +4,7 @@ export const Container = styled.View`
   ${(props) => css`
     flex: 1;
 
-    background: ${props.theme.colors.backgroundRed};
+    background: ${props.theme.colors.background.primary};
     padding: 20px;
   `}
 `;
@@ -45,7 +45,7 @@ export const Paragraph = styled.Text`
 
 export const Button = styled.TouchableOpacity`
   ${(props) => css`
-    background: ${props.theme.colors.background};
+    background: ${props.theme.colors.background.white};
     border-radius: 10px;
     margin-bottom: 10px;
     padding: 10px;
