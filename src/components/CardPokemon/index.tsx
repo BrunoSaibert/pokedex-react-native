@@ -8,12 +8,12 @@ import * as S from "./styles";
 export type CardPokemonProps = {
   id: number;
   nome: string;
-  cor: string;
+  tipo: string[];
 };
 
-export function CardPokemon({ cor, id, nome }: CardPokemonProps) {
+export function CardPokemon({ id, nome, tipo }: CardPokemonProps) {
   return (
-    <S.Card activeOpacity={0.9} cor={cor}>
+    <S.Card activeOpacity={0.9} tipo={tipo[0].toLowerCase()}>
       <S.CardLeft>
         <S.CardDotsBackgroundImage source={dotsCardImage} />
 
@@ -23,13 +23,11 @@ export function CardPokemon({ cor, id, nome }: CardPokemonProps) {
         <S.CardPokemonName>{nome}</S.CardPokemonName>
 
         <S.CardPokemonTypeList>
-          <S.CardPokemonTypeBadge>
-            <S.CardPokemonType>Grass</S.CardPokemonType>
-          </S.CardPokemonTypeBadge>
-
-          <S.CardPokemonTypeBadge>
-            <S.CardPokemonType>Poison</S.CardPokemonType>
-          </S.CardPokemonTypeBadge>
+          {tipo.map((item, index) => (
+            <S.CardPokemonTypeBadge key={index}>
+              <S.CardPokemonType>{item}</S.CardPokemonType>
+            </S.CardPokemonTypeBadge>
+          ))}
         </S.CardPokemonTypeList>
       </S.CardLeft>
 

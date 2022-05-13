@@ -1,6 +1,6 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import { BemVindoScreen, ListaScreen } from "../screens";
+import { BemVindoScreen, ListaScreen, DetalhesScreen } from "../screens";
 
 const Stack = createNativeStackNavigator();
 
@@ -12,6 +12,7 @@ export function Routes() {
     >
       <Stack.Screen name="BemVindoScreen" component={BemVindoScreen} />
       <Stack.Screen name="ListaScreen" component={ListaScreen} />
+      <Stack.Screen name="DetalhesScreen" component={DetalhesScreen} />
     </Stack.Navigator>
   );
 }

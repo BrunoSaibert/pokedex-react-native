@@ -1,7 +1,8 @@
 import styled, { css } from "styled-components/native";
+import theme from "../../global/styles/theme";
 
 type CardProps = {
-  cor: string;
+  tipo: keyof typeof theme.colors.backgroundType;
 };
 
 export const Card = styled.TouchableOpacity<CardProps>`
@@ -11,7 +12,7 @@ export const Card = styled.TouchableOpacity<CardProps>`
 
     position: relative;
 
-    background: ${props.cor ?? props.theme.colors.backgroundType.normal};
+    background: ${props.theme.colors.backgroundType[props.tipo]};
     border-radius: 10px;
     padding: 20px;
     margin-top: 30px;
